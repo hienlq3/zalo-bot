@@ -1,0 +1,8 @@
+# Môi trường
+.env
+
+# Dữ liệu user
+convMap.json
+
+# Node
+node_modules/
