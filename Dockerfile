@@ -17,7 +17,7 @@ COPY . .
 RUN touch convMap.json
 
 # Mở cổng
-EXPOSE 3000
+EXPOSE 4000
 
 # Lệnh khởi động
 CMD ["node", "server.js"]

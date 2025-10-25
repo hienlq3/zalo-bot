@@ -6,7 +6,7 @@ export async function handleDifyStreaming(userId, text) {
     const conversationId = getConversationId(userId) || "";
 
     try {
-        const difyResponse = await fetch("http://171.244.139.204/v1/chat-messages", {
+        const difyResponse = await fetch("http://171.244.139.204:8080/v1/chat-messages", {
             method: "POST",
             headers: {
                 Authorization: "Bearer app-kWEEUSubWCZuPYoAyiV2gxbG",

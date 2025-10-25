@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 // 📩 Nhận webhook từ Zalo
-app.post("/my-api", (req, res) => {
+app.post("/zalo/webhook", (req, res) => {
     const payload = req.body;
     const text = payload?.message?.text || "";
     const userId = payload?.sender?.id || "unknown";
@@ -32,5 +32,5 @@ app.post("/my-api", (req, res) => {
     handleDifyStreaming(userId, text);
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`🚀 Server chạy tại http://localhost:${PORT}`));
