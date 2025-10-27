@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: ".env" });
 
 export async function sendZaloMessage(userId, text) {
     const url = process.env.ZALO_API_URL || "https://openapi.zalo.me/v3.0/oa/message/cs";
