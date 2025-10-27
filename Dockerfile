@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Sao chép package.json & package-lock.json (nếu có)
 COPY package*.json ./
+COPY .env ./
 
 # Cài dependencies
 RUN npm install --production
