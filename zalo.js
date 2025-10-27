@@ -5,6 +5,7 @@ dotenv.config();
 
 export async function sendZaloMessage(userId, text) {
     const url = process.env.ZALO_API_URL;
+    console.log("Sending Zalo message to URL:", url);
     const accessToken = process.env.ZALO_ACCESS_TOKEN;
 
     const data = {
