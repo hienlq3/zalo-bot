@@ -4,18 +4,8 @@ services:
   node_app:
     build: ./
     container_name: node_app
-    expose:
-      - "4000"          # chỉ expose trong Docker network
-    networks:
-      - node-network
-
-  node_nginx:
-    build: ./nginx
-    container_name: node_nginx
     ports:
-      - "80:80"       # host port 8080 → container nginx port 80
-    depends_on:
-      - node_app
+      - "4000:4000"   # map trực tiếp port host 80 → container 4000
     networks:
       - node-network
 
