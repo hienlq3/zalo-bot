@@ -6,3 +6,6 @@ convMap.json
 
 # Node
 node_modules/
+
+nginx/minhtrang.net.crt
+nginx/minhtrang.net.key
